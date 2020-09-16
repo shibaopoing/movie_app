@@ -1,0 +1,3 @@
+ - Support for building, testing and running Java Modules
+ - Precompiled script plugins for Groovy DSL
+ - Single dependency lock file per project
