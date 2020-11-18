@@ -44,11 +44,13 @@ class _PlaylistPageState extends State<PlaylistPage> {
 
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
 
-        subtitles: BetterPlayerSubtitlesSource(
+        subtitles: [BetterPlayerSubtitlesSource(
 
             type: BetterPlayerSubtitlesSourceType.FILE,
 
-            url: "${directory.path}/example_subtitles.srt")));
+            urls: ["${directory.path}/example_subtitles.srt"]
+        )]
+        ));
 
 
 

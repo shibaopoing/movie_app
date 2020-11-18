@@ -27,7 +27,7 @@ dependencies:
   # 网络请求
   dio: ^3.0.9
   video_player: ^0.10.11+1
-  chewie: ^0.9.10
+  #chewie:  ^0.10.0
   # 图片加载
   cached_network_image: 2.0.0-rc
   quantize_dart: ^1.0.3
@@ -42,12 +42,12 @@ dependencies:
   pull_to_refresh: ^1.5.7
   shimmer: 1.0.0
   # 状态管理
-  provider: ^4.0.4
+  provider: ^4.3.2+2
   # 吐司
   oktoast: ^2.1.7
 
   # 路由管理
-  fluro: ^1.5.1
+  fluro: ^1.7.7
 
   # 日志打印
   logger: ^0.7.0+2
@@ -61,7 +61,8 @@ dependencies:
   transparent_image: ^1.0.0
   auto_orientation: ^1.0.6   #控制横竖屏控件
   gzx_dropdown_menu: ^2.0.0+2
-  better_player: ^0.0.9
+  better_player: ^0.0.33
+  wakelock: ^0.2.0+1
   inview_notifier_list: ^1.0.0
   awsome_video_player: ^1.0.8+1
 dev_dependencies:

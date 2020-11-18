@@ -12,7 +12,7 @@ import 'package:movie_app/pages/video/video_details_page.dart';
 import 'package:movie_app/util/fluro_convert_util.dart';
 
 class RouterManager {
-  static Router router;
+  static FluroRouter router;
 
   /// 启动/欢迎页
   static const String splash = "/";
@@ -35,7 +35,7 @@ class RouterManager {
   /// 作者详情
   static const String author = "/author";
 
-  static void configureRouter(Router router) {
+  static void configureRouter(FluroRouter router) {
     router.notFoundHandler = new Handler(
         // ignore: missing_return
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {

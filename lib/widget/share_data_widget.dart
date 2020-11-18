@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 class ShareDataWidget extends InheritedWidget {
-  String data; //需要在子树中共享的数据
+  final String data; //需要在子树中共享的数据
   final Function callback;
   ShareDataWidget(
       {Key key,

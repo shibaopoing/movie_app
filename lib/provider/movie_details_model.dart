@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:better_player/better_player.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_app/data/entity/movie_Info.dart';
@@ -16,8 +17,8 @@ class MovieDetailsModel extends ChangeNotifier {
   bool isInit;
   List<int> backColor;
   MovieInfo movieInfo;
-  //VideoPlayer videoPlayer;
   List<Map> widgets =new List();
+ // var betterPlayer;
   /// 初始化
   init(id) async {
     this.id = id;
@@ -39,10 +40,10 @@ class MovieDetailsModel extends ChangeNotifier {
       Map map = rspObj.data;
       this.movieInfo = MovieInfo.fromJson(map);
       // 提取网络图片的主要颜色
-      backColor=await getColorFromUrl(this.movieInfo.imgUrl,10);
+      this.backColor=await getColorFromUrl(this.movieInfo.imgUrl,10);
       List list = map['playList'];
-      if(playUrl==null){
-        playUrl =list[0]['playUrl'];
+      if(this.playUrl==null){
+        this.playUrl =list[0]['playUrl'];
       }
       list.forEach((item) {
         Map mm = new Map();
@@ -52,7 +53,6 @@ class MovieDetailsModel extends ChangeNotifier {
         mm.putIfAbsent("playColor", ()=>Colors.white);
         this.widgets.add(mm);
       });
-      //this.videoPlayer = new VideoPlayer(videoUrl:this.playUrl,title: this.movieInfo.title,);
      // this.widgets = list;
       notifyListeners();
       return this.widgets;
@@ -64,7 +64,6 @@ class MovieDetailsModel extends ChangeNotifier {
     if(this.playUrl==newUrl){
       return;
     }
-    //this.videoPlayer =null;
     this.playUrl =newUrl;
     notifyListeners();
   }

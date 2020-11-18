@@ -7,7 +7,7 @@ import 'package:movie_app/router/router_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 // 主入口
 void main() {
-  Router router = new Router();
+  FluroRouter router = new FluroRouter();
   RouterManager.configureRouter(router);
   RouterManager.router = router;
 

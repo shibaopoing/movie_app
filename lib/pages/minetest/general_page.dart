@@ -41,10 +41,11 @@ class _GeneralPageState extends State<GeneralPage> {
 
         "https://bobo.okokbo.com/20171220/ARVuPC7I/index.m3u8",
 
-        subtitles: BetterPlayerSubtitlesSource(
+        subtitles: [BetterPlayerSubtitlesSource(
             type: BetterPlayerSubtitlesSourceType.NETWORK,
-            url:
-            "https://dl.dropboxusercontent.com/s/71nzjo2ux3evxqk/example_subtitles.srt"));
+            urls:
+            ["https://dl.dropboxusercontent.com/s/71nzjo2ux3evxqk/example_subtitles.srt"]
+        )]);
     _betterPlayerController = BetterPlayerController(
 
         BetterPlayerConfiguration(
@@ -89,13 +90,13 @@ class _GeneralPageState extends State<GeneralPage> {
 
         BetterPlayerDataSourceType.FILE, "${directory.path}/testvideo.mp4",
 
-        subtitles: BetterPlayerSubtitlesSource(
+        subtitles: [BetterPlayerSubtitlesSource(
 
           type: BetterPlayerSubtitlesSourceType.FILE,
 
-          url: "${directory.path}/example_subtitles.srt",
+          urls: ["${directory.path}/example_subtitles.srt"],
 
-        ));
+        )]);
 
     _betterPlayerController = BetterPlayerController(
 
