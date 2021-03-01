@@ -15,3 +15,5 @@ released版可直接下载安装。
 
 <img src="https://user-images.githubusercontent.com/39298158/109458094-1b346100-7a97-11eb-8147-8496ef81e8d1.jpg" width="220" height="500"/>
 </p>
+几张动态图：
+====
