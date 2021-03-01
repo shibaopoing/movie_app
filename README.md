@@ -4,7 +4,7 @@ movie_app 是使用flutter 框架编写的一款电影APP。
 ====
 目前只有安卓端,大家一起学习，进步。
 ====
-released版可直接下载安装。[movie.apk](http://blog.csdn.net/guodongxiaren)  
+released版可直接下载安装。[movie.apk](https://github.com/shibaopoing/movie_app/releases/download/1/movie.apk)  
 ====
 欢迎加入微信交流
 <img src="https://user-images.githubusercontent.com/39298158/109496799-1a69f200-7acc-11eb-8099-0fa00ec51ddd.png" width="200" height="200"/>
