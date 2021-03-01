@@ -1,9 +1,11 @@
+本人是一位java后端开发者，最近对移动端开发产生了兴趣，但是先从IOS和android系统哪个开始有点难选，恰好遇到flutter框架。那就接着东方搞一波吧。
 movie_app 是使用flutter 框架编写的一款电影APP。
 ====
 目前只有安卓端,大家一起学习，进步。
 ====
 released版可直接下载安装。
 ====
+[movie.apk](http://blog.csdn.net/guodongxiaren)  
 有意者可加微信好友。
 <img src="https://user-images.githubusercontent.com/39298158/109496799-1a69f200-7acc-11eb-8099-0fa00ec51ddd.png" width="200" height="200"/>
 
