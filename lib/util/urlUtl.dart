@@ -1,12 +1,12 @@
 class Url {
   //首页banner
   //http://47.92.247.131:37071/tiger/searchContent
-  static const String BaseUrl = "http://47.102.217.76:8010/";
-  //static const   String BaseUrl = "http://192.168.1.3:8010/";
-  static const String ImageUrl = "http://47.102.217.76:88/ath/";
-  static const String MovieUrl = "http://47.92.247.131:37071/tiger/getContentListByPage";
-  static const String MovieDetailUrl = "http://47.92.247.131:37071/tiger/getContentDetail";
-  static const String SearchDetailUrl = "http://47.92.247.131:37071/tiger/searchContent";
+  static const String BaseUrl = "";
+  //static const   String BaseUrl = "";
+  static const String ImageUrl = "";
+  static const String MovieUrl = "";
+  static const String MovieDetailUrl = "";
+  static const String SearchDetailUrl = "";
   static const String GET_USER_INFO = "getUserInfo";
   static const String SEND_SMS_CODE = "sendSmsCode";
   static const String SET_FACE_IMAGE = "setFaceImage";
